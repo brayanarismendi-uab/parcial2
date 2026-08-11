@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Heladeria Doña Nieve</title>
+</head>
+
+<body>
+
+    <header>
+
+        <h1>Heladeria Doña Nieve</h1>
+
+        <p>
+            Somos una heladeria de barrio que prepara helados artesanales con ingredientes de calidad,
+            haceptamos pedidos
+        </p>
+    </header>
+
+    <main>
+
+        <form id="form-helados" novalidate method="POST" action="procesar.php">
+
+            <label for="nombre">nombre completo</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="correo">correo electronico</label>
+            <input type="email" id="correo" name="correo" required>
+
+            <label for="sabores">saborees</label>
+            <textarea id="sabores" name="sabores"></textarea>
+
+            <button type="submit">enviar pedido</button>
+
+            <p id="aviso-helados" class="aviso"></p>
+
+        </form>
+
+    </main>
+
+    <footer>
+        <p>Parcial 2 - brayan isai arismendi rodriguez</p>
+    </footer>
+</body>
+</html>
